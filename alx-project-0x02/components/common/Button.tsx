@@ -1,7 +1,8 @@
+// components/common/Button.tsx
 "use client";
 
 import React from "react";
-import { ButtonProps } from "@/interfaces";
+import { type ButtonProps } from "@/interfaces"; // <-- REQUIRED EXACT STRING
 
 export default function Button({
   label,
