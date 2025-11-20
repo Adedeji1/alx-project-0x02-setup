@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Header from "@/components/layout/Header";
 import PostCard from "@/components/common/PostCard";
@@ -13,7 +12,6 @@ export default function PostsPage() {
       const res = await fetch("https://jsonplaceholder.typicode.com/posts");
       const data = await res.json();
 
-      // Map API response to match PostProps
       const formatted = data.slice(0, 10).map((post: any) => ({
         title: post.title,
         content: post.body,
