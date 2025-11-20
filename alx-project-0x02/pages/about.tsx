@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "@/components/common/Button";
+import Header from "@/components/layout/Header";
 
 export default function AboutPage() {
   return (
     <div style={{ padding: "20px" }}>
+        <Header />
       <h1>About Page</h1>
       <p>Below are reusable buttons with different sizes and shapes:</p>
 
